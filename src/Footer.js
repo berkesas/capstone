@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer>
+        <footer className='footer'>
             <nav>
                 <h4>Sitemap</h4>
                 <ul>

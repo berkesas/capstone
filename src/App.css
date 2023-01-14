@@ -1,5 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .App-logo {
@@ -35,4 +51,173 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 33.3% 66.6%;
+  border: 0px solid blue;
+  min-width: 300px;
+}
+
+.navbar {
+  display: none;
+  grid-template-columns: 50% 50%;
+  border: 0px solid red;
+}
+
+.burger_menu {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 100%;
+    border: 0px solid red;
+  }
+  .burger_menu {
+    display: none;
+  }
+}
+
+.navlist {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.navlist li {
+  float: left;
+  margin: 10px;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: #495e57;
+}
+
+.navlist a:hover {
+  text-decoration: underline;
+  color: #495e57;
+}
+
+.main {
+  margin: 0px 0px 0px 0px;
+}
+
+.hero {
+  margin:0px;
+  padding:10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .hero {
+    margin: 0px;
+    padding:10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.footer {
+  margin: 0px 5px 0px 5px;
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    margin: 0px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.33%;
+    border: 0px solid blue;
+  }
+}
+
+.bg-primary-dark {
+  background-color: #495e57;
+}
+
+.bg-primary-light {
+  background-color: #f4ce14;
+}
+
+.col-yellow {
+  color: #f4ce14;
+}
+
+.col-red1 {
+  color: #ee9972;
+}
+
+.col-red2 {
+  color: #fbdabb;
+}
+
+.col-gray {
+  color: #edefee;
+}
+
+.btn-rounded {
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bold;
+}
+
+.display-title {
+  font-family: "Markazi Text";
+  font-size: 64px;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.sub-title {
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: -20px;
+}
+
+.lead-text {
+  font-family: "Karla";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hero img {
+  border-radius: 16px;
+  align-self: center;
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  align-items: center;
+  margin: auto;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+#specials {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+}
+
+.p-20 {
+  padding: 20px;
 }

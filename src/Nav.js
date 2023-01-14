@@ -1,8 +1,11 @@
+import icon_hamburger_menu from './assets/img/icon_hamburger_menu.svg'
 
 function Nav() {
     return (
-        <nav>
-            <ul>
+        <>
+        <div className='burger_menu'><img src={icon_hamburger_menu} alt='hamburger menu'/></div>
+        <nav className='navbar'>
+            <ul className='navlist lead-text bold'>
                 <li><a href='/home'>Home</a></li>
                 <li><a href='/about'>About</a></li>
                 <li><a href='/menu'>Menu</a></li>
@@ -11,6 +14,7 @@ function Nav() {
                 <li><a href='/login'>Login</a></li>
             </ul>
         </nav>
+        </>
     );
 }
 
