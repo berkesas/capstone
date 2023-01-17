@@ -553,15 +553,15 @@ p {
 
 @media only screen and (min-width: 768px) {
   .footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border: 0px solid blue;
     background-color: #edefee;
   }
 }
 
 .footer div {
-  padding: 10px;
+  padding: 5px;
 }
 
 .footer ul {
@@ -577,4 +577,31 @@ p {
 .footer a:hover {
   color: #495e57;
   text-decoration: underline;
+}
+
+/* form */
+
+.field {
+  display:flex;
+  flex-direction: column;
+  font-size:20px;
+  margin-top:15px;
+}
+
+.field label {
+  margin-bottom:5px;
+}
+
+.field input, select {
+  font-size:20px;
+  border-radius: 5px;
+  border:1px solid gray;
+  padding:3px;
+}
+
+fieldset {
+  border:0px;
+  display:flex;
+  flex-wrap:none;
+  flex-direction: column;
 }
