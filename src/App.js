@@ -1,6 +1,10 @@
 import './App.css';
 import Header from './Header';
 import Homepage from './Homepage';
+import About from './About';
+import Menu from './Menu';
+import OrderOnline from './OrderOnline';
+import Login from './Login';
 import BookingForm from './BookingForm';
 import Footer from './Footer';
 import ConfirmedBooking from './ConfirmedBooking';
@@ -39,6 +43,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/menu" element={<Menu />}></Route>
         <Route path="/booking" element={
           <BookingForm
             availableTimes={availableTimes}
@@ -46,6 +52,8 @@ function App() {
             submitForm={submitForm}
           />}></Route>
         <Route path="/confirmedbooking" element={<ConfirmedBooking />}></Route>
+        <Route path="/order-online" element={<OrderOnline />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
       <Footer />
     </>
