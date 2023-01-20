@@ -18,26 +18,6 @@ function BookingForm(props) {
         'numberOfGuests': '',
         'occasion': ''
     });
-    // const [touched, setTouched] = useState({
-    //     'bookingDate': false,
-    //     'bookingTime': false,
-    //     'numberOfGuests': false,
-    //     'occasion': false
-    // });
-
-    // This should be a reducer instead of useState in prod
-    // const handleTouch = (e, val) => {
-    //     //e.preventDefault();
-    //     let newTouched = {
-    //         'bookingDate': false,
-    //         'bookingTime': false,
-    //         'numberOfGuests': false,
-    //         'occasion': false
-    //     };
-    //     newTouched[val] = true;
-    //     setTouched(newTouched);
-    //     //getIsFormValid();
-    // }
 
     const getIsFormValid = () => {
         let newErrors = {
@@ -120,13 +100,14 @@ function BookingForm(props) {
                             <label htmlFor="res-date">Choose date</label>
                             <input
                                 aria-label="Choose a date"
-                                type='date'
+                                type="date"
                                 value={bookingDate}
                                 onChange={(e) => {
                                     handleChange(e, 'bookingDate');
                                 }}
                                 placeholder="Date"
                                 required
+                                data-testid="bookingDate"
                             />
                         </div>
                         <FieldError>{errors['bookingDate']}</FieldError>

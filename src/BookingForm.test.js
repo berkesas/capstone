@@ -46,9 +46,7 @@ test('validate form with good values', async () => {
   await fireEvent.change(occasionField, {
     target: { value: 'Birthday' },
   });
-  // const submitButton = screen.getByText('Make Your reservation');
-  // expect(submitButton).toBeInTheDocument();
-  // await userEvent.click(submitButton);
+ 
   const form = screen.getByTestId('form-reservation');
   fireEvent.submit(form);
   //there should be an error textw
@@ -80,9 +78,7 @@ test('validate form with bad values', async () => {
   await fireEvent.change(occasionField, {
     target: { value: '' },
   });
-  // const submitButton = screen.getByText('Make Your reservation');
-  // expect(submitButton).toBeInTheDocument();
-  // await userEvent.click(submitButton);
+  
   const form = screen.getByTestId('form-reservation');
   fireEvent.submit(form);
   //there should be an error textw
